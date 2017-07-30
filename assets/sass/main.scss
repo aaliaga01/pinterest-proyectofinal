@@ -43,21 +43,28 @@
 	}
 }
 
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
 #contenedor-principal{
 	background-color:white;
 	height: 100vh;
 	#menu{
 		border-bottom: solid thin #F0F0F0;
+		padding-bottom: 5px;
 		.icon{
 			color:#C8C8C8;	
 			i{
-				padding-right: 5px;
+				padding-right: 2px;
 			}
 			.fa{
 				color: red;
 			}
 		}
 		.search{
+			background-color: #F0F0F0;
+			border-right: solid thin silver;
 			i{
 				padding-right: 5px;
 			}
@@ -65,15 +72,37 @@
 				color: white;
 			}
 		}
+		.drop{
+			background-color: #F0F0F0;
+			text-align: right;
+			.fa{
+				padding-left: 5px;
+			}
+		}
 		input{
 			border: none;
 			background-color:transparent;
-			width: 94%;
-			height: 20px;
+			width: 93%;
+			height: 16px;
 		}
-		#buscar{
-			background-color: #F0F0F0;
+		.caja-com{
+			margin-left: 10px;
+			padding: 6px;
+			background-color: silver;
+			border-radius: 20px;
 		}
 	}
 
+	#resultados{
+		background-color: silver;
+		margin: 1% 9%;
+	}
+
+	#pines{
+		margin: 0 9%;
+		.pin{
+			background-color: grey;
+			margin: 2px 17px;
+		}
+	}
 }
