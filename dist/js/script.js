@@ -10252,4 +10252,3 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-alert("holi")

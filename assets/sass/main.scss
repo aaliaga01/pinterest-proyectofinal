@@ -42,3 +42,38 @@
 		width: anchoDeColumnas($i);
 	}
 }
+
+#contenedor-principal{
+	background-color:white;
+	height: 100vh;
+	#menu{
+		border-bottom: solid thin #F0F0F0;
+		.icon{
+			color:#C8C8C8;	
+			i{
+				padding-right: 5px;
+			}
+			.fa{
+				color: red;
+			}
+		}
+		.search{
+			i{
+				padding-right: 5px;
+			}
+			.fa{
+				color: white;
+			}
+		}
+		input{
+			border: none;
+			background-color:transparent;
+			width: 94%;
+			height: 20px;
+		}
+		#buscar{
+			background-color: #F0F0F0;
+		}
+	}
+
+}
