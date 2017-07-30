@@ -10252,3 +10252,20 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+$.ajax({
+		url: 'data.json',
+		type: 'GET',
+		dataType: 'JSON',
+		data: {'limit': '20'},
+	})
+	.done(function(r) {
+		console.log(r);
+		console.log("success");
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	});
