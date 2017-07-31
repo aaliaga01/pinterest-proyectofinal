@@ -10264,10 +10264,47 @@ objeto.forEach(function(dato){
 	var usuario = dato.user;
 	var hash = dato.hashtag;
 
-	$('#pines').append("<div id='pin'><div class='imagen'><img src='dist/img/" + imagen 
+	$('#pines').append("<div id='pin' class='pin-mod'><div class='imagen'><img src='dist/img/" + imagen 
 		+"' alt='imagen'><h3>" + titulo 
 		+ "</h3><span class='contadores'><i class='fa fa-thumb-tack' aria-hidden='true'></i>36,6k<i class='fa fa-check' aria-hidden='true'></i>6</span><p>"
-		+ desc + "</p><span class='user'><div class='letra'>M</div>" + usuario + "#" +hash+ "</span></div></div>")
+		+ desc + "</p><span class='user'><div class='letra'>M</div>" + usuario + "#" +hash+ "</span></div></div>");
 
 });
+
+$(document).ready(function(){
+
+	function modal (){
+		var proyectos = Array.from(document.getElementsByClassName(".pin-mod"));
+		var modalWork = document.getElementById("modal");
+		var modalMostrar, cerrar, equis;
+		
+		proyectos.forEach(function(img){
+
+		img.addEventListener("click", function(){//a cada clase encontrada le va a agregar el evento click
+
+			$("#modal").removeClass("hide");
+
+    	modalMostrar= document.createElement("div");//crea un div nuevo
+    	modalMostrar.classList.add("modal-work");//se agrega la clase modal-work
+    	modalMostrar.innerHTML= img.innerHTML;//el contenido de cada clase box-work se imprime dentro del nuevo div
+
+    	modalWork.appendChild(modalMostrar);//se coloca nuevo div dentro de box-work-modal 
+    	modalWork.classList.remove("hide");//se le quita la clase que lo oculta 
+
+    	cerrar = document.createElement("span");//crea un span
+    	cerrar.setAttribute("class", "cerrarX");//se le asigna una clase
+    	crearX = document.createTextNode("X");//se crea nodo de texto que tendra la X
+    	cerrar.appendChild(crearX);//se coloca la X dentro del span
+    	modalMostrar.appendChild(cerrar);//se coloca el span junto con la foto
+
+
+    	cerrar.addEventListener("click",function(){
+    			modalWork.classList.add("hide");
+    		});
+    	});
+		});
+	}
+	modal();
+});
+
 
