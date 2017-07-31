@@ -4,7 +4,7 @@ Requerimientos Técnicos
 
 El proyecto fue realizado con las siguientes dependencias NPM:
 
-Dependencias de Desarrollo
+Dependencias de Desarrollo: 
     gulp: ~v.3.9.1,
     gulp-concat: ~v.2.6.1,
     gulp-minify-css: ~v.1.2.4
@@ -13,10 +13,10 @@ Dependencias de Desarrollo
     gulp-watch: ~v.4.3.11,
     gulp-webserver: ~v.0.9.1
 
-Dependencias de Producción
+Dependencias de Producción: 
 	jQuery: ~v.3.1.1,
 
-Levantamiento ambiente de desarrollo
+Levantamiento ambiente de desarrollo: 
 	*Clonar repositorio
 	*Posicionado en nuestra carpeta clonada desde la terminal hacer correr npm install
 	*Instalar las dependencias de desarrollo señaladas
