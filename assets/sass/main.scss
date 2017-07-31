@@ -111,13 +111,36 @@ body{
 				}
 			}
 			h3{
-				width: 78%;
+				width: 70%;
 				float: left;
-				font-weight: 400;
+				font-weight: 700;
+				color: grey;
 			}
 			.contadores{
 				font-size: 10px;
 				color: silver;
+				.fa {
+					padding-left:3px;
+					padding-right:1px;
+				}
+			}
+			p{
+				padding: 2px 0;
+			}
+			.user{
+				font-size: 10px;
+				.letra{
+					background-color: crimson;
+					width: 26px;
+					height: 26px;
+					padding: 3px 2px 4px 6px;
+					border-radius: 20px;
+					font-size: 14px;
+					font-weight: 700;
+					color: white;
+					float: left;
+					margin-right: 5px;
+				}
 			}
 		}
 	}

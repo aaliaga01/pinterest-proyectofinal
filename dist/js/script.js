@@ -10260,7 +10260,7 @@ console.log(objeto);
 objeto.forEach(function(dato){
 	var titulo = dato.image_url;
 
-	$('#pines').append("<div class='pin col-2'><img src='../img/" + titulo + "'></div")
+	$('#pines').append("<div class='pin col-2'><img src='..assets/img/" + titulo + "'></div")
 
 })
 
