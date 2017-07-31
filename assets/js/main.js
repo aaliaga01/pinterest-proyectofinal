@@ -11,9 +11,9 @@ objeto.forEach(function(dato){
 	var hash = dato.hashtag;
 
 	$('#pines').append("<div id='pin'><div class='imagen'><img src='../assets/img/" + imagen 
-		+"'><h3>" + titulo 
+		+"' alt='imagen'><h3>" + titulo 
 		+ "</h3><span class='contadores'><i class='fa fa-thumb-tack' aria-hidden='true'></i>36,6k<i class='fa fa-check' aria-hidden='true'></i>6</span><p>"
 		+ desc + "</p><span class='user'><div class='letra'>M</div>" + usuario + "#" +hash+ "</span></div></div>")
 
-})
+});
 

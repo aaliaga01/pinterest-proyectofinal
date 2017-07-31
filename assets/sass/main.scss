@@ -46,56 +46,109 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background-color:white;
-
 }
 
 #contenedor-principal{
 	#menu{
 		border-bottom: solid thin #F0F0F0;
-		padding-bottom: 5px;
+		padding-bottom: 3px;
+		color: #575757;
 		.icon{
 			color:#C8C8C8;	
 			i{
 				padding-right: 2px;
 			}
 			.fa{
-				color: red;
+				color: #cb2027;
+				font-size: 30px;
 			}
 		}
 		.search{
 			background-color: #F0F0F0;
 			border-right: solid thin silver;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
 			i{
 				padding-right: 5px;
 			}
 			.fa{
-				color: white;
+				color: silver;
 			}
 		}
 		.drop{
 			background-color: #F0F0F0;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
 			text-align: right;
 			.fa{
 				padding-left: 5px;
+				font-size: 20px;
+				font-weight: 700;
+				margin-left: 10px;
+				color:silver;
 			}
 		}
 		input{
 			border: none;
 			background-color:transparent;
-			width: 93%;
-			height: 16px;
+			width: 90%;
+			height: 20px;
+		}
+		input[placeholder]{
+			color: silver;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+
+		.user{
+			.fa{
+				margin-left: 40px;
+				margin-right: 10px;
+				font-size: 25px;
+				color: #f0cdc9 ;
+			}
+		}
+		.bars{
+			color: #c0c0c0;
+			font-size: 23px;
+			padding-top: 5px;;
+			span{
+				font-size: 9px;
+				position: absolute;
+				background-color: #cb2027;
+				border-radius: 9px;
+				color: white;
+				padding-left:3px;
+				top:20px;
+				right:35px;
+				width: 14px;
+				height: 14px;
+			}
+
 		}
 		.caja-com{
 			margin-left: 10px;
 			padding: 6px;
-			background-color: silver;
+			background-color: #e0e0e0;
+			border: solid 1px #f2eded;
 			border-radius: 20px;
+			font-size: 23px;
+			color:grey;
 		}
 	}
 
 	#resultados{
-		background-color: silver;
 		margin: 1% 9%;
+		.res{
+			padding:15px;
+			background-color: pink;
+			border-radius: 5px;
+			display: inline-block;
+			margin: 0 4px;
+			color: white;
+			font-size: 12px;
+			font-weight: 700;
+		}
 	}
 
 	#pines{
@@ -106,7 +159,7 @@ body{
 		margin: 50px auto;
 		div#pin{
 			font-size: 14px;
-			margin: 0 2px 15px;
+			margin: 0 2px 20px;
   			display: inline-block;
   			column-break-inside: avoid;
 			.imagen{
@@ -119,7 +172,7 @@ body{
 				width: 70%;
 				float: left;
 				font-weight: 700;
-				color: grey;
+				color: #575757;
 			}
 			.contadores{
 				font-size: 10px;
@@ -136,7 +189,7 @@ body{
 			.user{
 				font-size: 10px;
 				.letra{
-					background-color: crimson;
+					background-color: #f0cdc9;
 					width: 26px;
 					height: 26px;
 					padding: 3px 2px 4px 6px;
